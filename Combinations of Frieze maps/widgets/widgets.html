@@ -1,0 +1,97 @@
+	<div id="widget_container" style="top: 431px; left: 98px;">
+		
+		<div id="widget" class="clearfix" style="top: 0px; left: 0px;">
+			<div id="widget_control" class="widget_controlWidth">
+				<button id="widget_styleButtonID" class="widget_controlButton" onclick="WIDGETS.toggleStyleModality();"><img class="widget_controlIcon" src="./widgets/styleIcon.png"></button>
+				<button id="widget_visibilityButtonID" class="widget_controlButton" onclick="WIDGETS.toggleVisibilityModality();"><img class="widget_controlIcon" src="./widgets/visibilityIcon.png"></button>
+				<button id="widget_labelButtonID" class="widget_controlButton" onclick="WIDGETS.toggleLabelModality();"><img class="widget_controlIcon" src="./widgets/labelIcon.png"></button>
+			</div>
+			<div class="style_pane widget_pointPaneWidth">
+				<img id="pointStyleCheckbox" class="style_paneCheckbox" onclick="WIDGETS.pointCheckClicked(event);" src="./widgets/unchecked.png">
+				<div class="style_paneBackground widget_pointImgWidth"></div>
+				<img class="style_paneContent widget_pointImgWidth" onclick="WIDGETS.pointGridClicked(event);" src="./widgets/pointStyleGrid.png">
+				<div id="pointStyleSelector" class="style_paneSelector">&nbsp;</div>
+			</div>
+			<div id="widget_lineStylePane" class="style_pane">
+				<img id="lineStyleCheckbox" class="style_paneCheckbox" onclick="WIDGETS.lineCheckClicked(event);" src="./widgets/unchecked.png">
+				<div class="style_paneBackground widget_lineStyleWidth"></div>
+				<img class="style_paneContent widget_lineStyleWidth" onclick="WIDGETS.lineGridClicked(event);" src="./widgets/lineStyleGrid.png">
+				<div id="widget_lineStyleSelector" class="style_paneSelector">&nbsp;</div>
+			</div>
+			<div id="widget_colorPane" class="style_pane">
+				<img id="objectColorCheckbox" class="style_paneCheckbox" onclick="WIDGETS.colorCheckClicked(event);" src="./widgets/unchecked.png">
+				<img class="widget_colorIcon" src="./widgets/objectIcon.png">
+				<img id="textColorCheckbox" class="style_paneCheckbox" onclick="WIDGETS.labelCheckClicked(event);" src="./widgets/unchecked.png">
+				<img class="widget_colorIcon" src="./widgets/textIcon.png">
+				<div id="widget_colorGrid" class="style_paneBackground" onclick="WIDGETS.colorGridClicked(event);">
+					<div class="widget_color_column" style="left:0rem;">
+						<div class="widget_color_block block0a"></div>
+						<div class="widget_color_block block0b"></div>
+						<div class="widget_color_block block0c"></div>
+					</div>
+					<div class="widget_color_column" style="left:1.6875rem;">
+						<div class="widget_color_block block1a"></div>
+						<div class="widget_color_block block1b"></div>
+						<div class="widget_color_block block1c"></div>
+					</div>
+					<div class="widget_color_column" style="left:3.375rem;">
+						<div class="widget_color_block block2a"></div>
+						<div class="widget_color_block block2b"></div>
+						<div class="widget_color_block block2c"></div>
+					</div>
+					<div class="widget_color_column" style="left:5.0625rem;">
+						<div class="widget_color_block block3a"></div>
+						<div class="widget_color_block block3b"></div>
+						<div class="widget_color_block block3c"></div>
+					</div>
+					<div class="widget_color_column" style="left:6.75rem;">
+						<div class="widget_color_block block4a"></div>
+						<div class="widget_color_block block4b"></div>
+						<div class="widget_color_block block4c"></div>
+					</div>
+					<div class="widget_color_column" style="left:8.4375rem;">
+						<div class="widget_color_block block5a"></div>
+						<div class="widget_color_block block5b"></div>
+						<div class="widget_color_block block5c"></div>
+					</div>
+					<div class="widget_color_column" style="left:10.125rem;">
+						<div class="widget_color_block block6a"></div>
+						<div class="widget_color_block block6b"></div>
+						<div class="widget_color_block block6c"></div>
+					</div>
+					<div class="widget_color_column" style="left:11.8125rem;">
+						<div class="widget_color_block block7a"></div>
+						<div class="widget_color_block block7b"></div>
+						<div class="widget_color_block block7c"></div>
+					</div>
+					<div class="widget_color_column" style="left:13.5rem;">
+						<div class="widget_color_block block8a"></div>
+						<div class="widget_color_block block8b"></div>
+						<div class="widget_color_block block8c"></div>
+					</div>
+					<div id="widget_colorSelector" class="style_paneSelector" style="top: 0.13rem; left: 1.79rem; display: none;">&nbsp;
+					</div>
+				</div>
+			</div>
+			<div class="style_pane widget_dismissPane">
+				<img class="dismiss_button confirm_button" onclick="WIDGETS.confirmModality();" src="./widgets/confirm.png">
+				<img class="dismiss_button cancel_button" onclick="WIDGETS.cancelModality();" src="./widgets/cancel.png">
+			</div>
+			<div id = "labelPane" class="label_pane" style="font-size: 0.8rem; width:17rem; padding:0.5rem; padding-top:1rem;">
+				<div>
+					<span>Label: </span><br>
+					<input class="widget-label-edit-text" style="width: 16rem;" oninput="WIDGETS.labelChanged (this.value);">
+				</div>
+				<div>
+					<div style="padding-top: 0.5rem;">
+						<label><input type="checkbox" onclick="WIDGETS.labelToggled ();">Show Label</label>
+					</div>
+				</div>
+			</div>
+			<div class="label_pane widget_dismissPane">
+				<img class="dismiss_button confirm_button" onclick="WIDGETS.confirmModality();" src="./widgets/confirm.png">
+				<img class="dismiss_button cancel_button" onclick="WIDGETS.cancelModality();" src="./widgets/cancel.png">
+			</div>
+		</div>
+	</div>
+	

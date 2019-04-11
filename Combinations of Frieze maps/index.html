@@ -3,26 +3,39 @@
   <head>
     <meta charset="utf-8" />
     <title>Web Sketchpad</title>
-
-  <script charset="utf-8" type="text/javascript" src="./js/jquery-2.1.0.min.js"></script>
-    <script charset="utf-8" type="text/javascript" src="./js/wsp-min.js"></script>
-    <script charset="utf-8" type="text/javascript" src="./js/wsp-runner.js"></script>
-  <script charset="utf-8" type="text/javascript" src="./js/sketch-json.js"></script>
-        
+		
+		<script charset="utf-8" type="text/javascript" src="./js/jquery-2.1.0.min.js"></script>
+		<script charset="utf-8" type="text/javascript" src="./js/wsp-min.js"></script>
+		<script charset="utf-8" type="text/javascript" src="./widgets/jquery.tiny-draggable.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="./widgets/widgets.css" />
+		<script charset="utf-8" type="text/javascript" src="./widgets/widgets.js"></script>
+		<script charset="utf-8" type="text/javascript" src="./js/sketch-json.js"></script>
+		<script charset="utf-8" type="text/javascript" src="./js/wsp-runner.js"></script>
+		
     <style type="text/css">
       .sketch_canvas {
           border: medium solid lightgray;
           display: inline-block;
       }
     </style>
-  </head>
+
+	</head>
   <body>
-    <div class="sketch_canvas" data-var="sketch" >&nbsp;</div>
-  <footer>
-      <div class="legal">
-      <div class="copyright">Copyright &copy; 2016 KCP Technologies, a McGraw-Hill Education Company. All rights reserved.</div>
-      <div class="version">Release: 2015Q4Update2, Semantic Version: 4.5.1-alpha, Build Number: 1026.7-wsp-widgets, Build Stamp: ip-10-149-70-76/20180827113946</div>
-      </div>
-  </footer>
+
+		<div class="sketch_container">
+			<div class="sketch_canvas" id="sketchDiv" data-var="sketch" > </div>
+			<p><!--Any (short!) desired left-justified text goes here--></p>
+			<span class="page_buttons"></span>
+			<button class="widget_button">Widgets</button>
+		</div>
+		<div id="widget"></div>
+
+    <div style="font-size:80%;"> <br>
+        <div class="legal">
+        <div class="copyright">Copyright &copy; 2016 KCP Technologies, a McGraw-Hill Education Company. All rights reserved.</div>
+        <div class="version">Release: 2017Q2beta, Semantic Version: 4.5.1-alpha, Build Number: 1021, Build Stamp: ip-10-149-70-76/20160706123640</div>
+        </div>
+    </div>
+
   </body>
 </html>

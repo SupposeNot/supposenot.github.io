@@ -1,0 +1,317 @@
+
+#widget_container {
+	position:absolute;
+	height:0;
+	line-height: normal;
+	font-size: 1rem;
+	box-sizing: border-box;
+}
+
+#widget_container * {
+	box-sizing: border-box;
+}
+
+#widget {
+	position:relative;
+}
+
+.widget_controlWidth {
+		width:1.9rem;
+}
+
+#widget_colorPane {
+	width: 16rem;
+}
+
+#widget_colorGrid {
+	width: 15.25rem;
+}
+
+#widget_control {
+	float:left;
+	position:relative;
+	margin:0;
+	padding: 0;
+	padding-top: 1rem;
+	border: 1px solid;
+	background-color: #fff;
+	height:6.6rem;
+	cursor: move;
+}
+
+.widget_controlButton {
+	border:none;
+	background: none;
+	width:1.7rem;
+	padding: 0;
+	margin: 0 auto;
+	cursor: pointer;
+}
+
+#widget_styleButtonID {
+	position: absolute;
+	top: 0.5rem; 
+}
+
+#widget_visibilityButtonID {
+	position: absolute;
+	top: 2rem; 
+}
+
+#widget_labelButtonID {
+	position: absolute;
+	top: 3.5rem; 
+}
+
+.widget_controlIcon {
+	width: 1.5rem;
+}
+
+#widget_lineStyleSelector {
+	width: 3.13rem;
+}
+
+#widget_colorSelector {
+	height:1.62rem;
+	width:1.62rem;
+	border:1px solid;
+}
+
+.widget_colorIcon {
+	height: 1.1rem;
+	padding-bottom: 0.3rem;
+}
+
+.widget_dismissPane {
+	width:2.12rem;
+}
+
+.style_pane {
+	float:left;
+	position:relative;
+	margin:0;
+	margin-left:-1px;
+	padding:0.31rem;
+	padding-top: 0px;
+	border: 1px solid;
+/*	width:1.31rem;*/
+	height:6.61rem;
+	background-color:#eeeeee;
+	display: none;
+}
+
+.widget_pointPaneWidth {
+	width:1.93rem;
+}
+
+.widget_pointImgWidth {
+	width: 1.31rem;
+}
+.widget_lineStyleWidth {
+	width:9.6rem;
+}
+
+#widget_lineStylePane {
+	width:10.22rem;
+}
+
+.clearfix:after { 
+	 content: "."; 
+	 visibility: hidden; 
+	 display: block; 
+	 height: 0; 
+	 clear: both;
+}		
+
+.style_paneCheckbox {
+	padding:0.31rem;
+	padding-right:0;
+	width:1.06rem;
+	cursor: pointer;
+}
+
+.style_paneBackground {
+	position:absolute;
+	top:1.25rem;
+	left:.31rem;
+	height:4.9rem;
+	background-color:#ffffff;
+	z-index:2;
+}
+
+.style_paneContent {
+	position:absolute;
+	top:1.25rem;
+	left:.31rem;
+	height:5.06rem;
+	z-index:4; 
+}
+
+.style_paneSelector {
+	position:absolute;
+	background-color:#ddf;
+	height:1.19rem;
+	width:1.19rem;
+	left:.37rem;
+	z-index:3;
+	display:none;
+}
+
+.widget_color_column {
+	position:absolute;
+	width:1.6875rem;
+	height:4.88rem;
+}
+
+.widget_color_column .widget_color_block {
+	position:relative;
+	margin: 0.312rem;
+	width:1.25rem;
+	height:1.25rem;
+	z-index:4;
+	border: 1px solid black; 
+}
+
+/* Define the colors for the color widget */
+.block0a {background-color: #ffffff;}
+.block0b {background-color: #c0c0c0;}
+.block0c {background-color: #000000;}
+.block1a {background-color: #ff0000;}
+.block1b {background-color: #d85656;}
+.block1c {background-color: #7f0000;}
+.block2a {background-color: #ff7f00;}
+.block2b {background-color: #c0854a;}
+.block2c {background-color: #7f3f00;}
+.block3a {background-color: #ffff00;}
+.block3b {background-color: #d8d856;}
+.block3c {background-color: #7f7f00;}
+.block4a {background-color: #00ff00;}
+.block4b {background-color: #56d856;}
+.block4c {background-color: #007f00;}
+.block5a {background-color: #00ffff;}
+.block5b {background-color: #56d8d8;}
+.block5c {background-color: #007f7f;}
+.block6a {background-color: #0000ff;}
+.block6b {background-color: #5656d8;}
+.block6c {background-color: #00007f;}
+.block7a {background-color: #7f00ff;}
+.block7b {background-color: #8a66d9;}
+.block7c {background-color: #3f007f;}
+.block8a {background-color: #ff00ff;}
+.block8b {background-color: #d856d8;}
+.block8c {background-color: #7f007f;}
+
+/* Label Pane styles */
+.label_pane {
+	float:left;
+	position:relative;
+	margin:0;
+	margin-left:-1px;
+	padding:0.31rem;
+	padding-top: 0px;
+	border: 1px solid;
+	height:6.61rem;
+	background-color:#eeeeee;
+	display: none;
+}
+
+.dismiss_button {
+	position:relative;
+	width: 1.5rem;
+	cursor: pointer;
+}
+
+.confirm_button {
+	top: 1.5rem;
+}
+
+.cancel_button {
+	top: 2.5rem;
+}
+
+/* The sketch_container includes the sketch itself and content immediately below it. */
+/* It's resized, when the sketch is loaded, to the width of the sketch. */
+/* Default content immediately below is a paragraph, a widget button, and the page controls. */
+/* The latter two must have place-holders in the html; otherwise they don't exist. */
+/* The widget_button is right of the paragraph because it may appear/disappear from page to page, */
+/* and we don't want the paragraph jumping back and forth when the user changes pages. */
+.sketch_canvas {
+	position: relative;
+}
+.sketch_container {
+	border:1px solid black;
+	display:inline-block;
+	position: relative;
+	box-sizing: content-box
+}
+.sketch_container .sketch_canvas {
+	border:none;
+	border-bottom: 1px solid black;
+}
+.sketch_container p {
+	margin: 0.1rem 0.5rem;
+	font-family:serif;
+	font-size:0.9rem;
+	float: left;
+}
+.sketch_container a {
+	cursor: pointer;
+}
+.widget_button {
+	margin:0.15rem 0.5rem;
+	font-size: 0.85rem;
+	background-color: #fff;
+	float:right;
+	cursor: pointer;
+}
+
+.widget_button_active {
+	background-color: #ddf;
+}
+
+.page_buttons {
+	float:right;
+	font-family:serif "Times New Roman";
+	font-size:1.1rem;
+	line-height: 1rem;
+	margin: 0.25rem;
+	border:none;
+	cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+	}
+
+.page_buttonsActive {
+	border: 1px solid;
+	border-radius: 0.3rem;
+	margin-right: 0.2rem;
+}
+
+.page_btn {
+	display: inline-block;
+	width: 1.6rem;
+	background: no-repeat center/0.8rem 0.8rem;
+}
+
+.page_prevBtn {
+	background-image: url("left-pointer.png");
+	opacity: 0.4;
+}
+
+.page_nextBtn {
+	background-image: url("right-pointer.png");
+}
+
+.page_popup {
+	position:absolute;
+	line-height: 1.1rem;
+	top: -5rem;
+	left:-0.3rem;
+	padding:0.2rem;
+	border:1px solid;
+	margin-top: 1px;
+	z-index:1;
+	background-color:#fff;
+}
